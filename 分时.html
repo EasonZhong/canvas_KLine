@@ -64,15 +64,14 @@
         for (var i = 0; i < 240; i++) {
             var y = parseInt(Math.random() * 160)
 
-            cxt.fillRect(2.525*i, y, 1, 299 - y);
           
-            // if(i != 0){
-            //     cxt.beginPath();
-            //     cxt.strokeStyle = 'yellow'; 
-            //     cxt.moveTo(highX, highY);
-            //     cxt.lineTo(2.525*i, y);
-            //     cxt.stroke();
-            // }
+            if(i != 0){
+                cxt.beginPath();
+                cxt.strokeStyle = 'yellow'; 
+                cxt.moveTo(highX, highY);
+                cxt.lineTo(2.525*i, y);
+                cxt.stroke();
+            }
 
             highX = 2.525*i;
             highY = y;
